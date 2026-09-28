@@ -4,13 +4,13 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                bat 'python -m pip install -r requirements.txt'
+                bat 'C:\\Users\\Admin\\AppData\\Local\\Python\\bin\\python.exe -m pip install -r requirements.txt'
             }
         }
 
         stage('Test') {
             steps {
-                bat 'python -m pytest'
+                bat 'C:\\Users\\Admin\\AppData\\Local\\Python\\bin\\python.exe -m pytest'
             }
         }
     }
